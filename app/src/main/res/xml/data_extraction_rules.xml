@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Android 12+ backup and device-transfer rules. Nothing is excluded: the app's only state is
+  the paired TV (address, name, device id, access token) and the remote's layout, and
+  restoring those on a new phone is what makes it reconnect without re-pairing.
+-->
+<data-extraction-rules>
+    <cloud-backup />
+    <device-transfer />
+</data-extraction-rules>

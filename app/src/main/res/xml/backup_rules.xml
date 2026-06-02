@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Auto Backup rules for Android 11 and older. Everything is included, for the same reason as
+  data_extraction_rules.xml: the pairing and the layout are all the app has, and both are
+  worth carrying to a new phone.
+-->
+<full-backup-content />

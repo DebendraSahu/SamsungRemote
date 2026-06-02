@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Discovery reads http://<tv-ip>:8001/api/v2/ to learn each TV's name. Tizen sets serve that
+  endpoint over plain HTTP only, and Android blocks cleartext by default from targetSdk 28,
+  so without this the probe fails with UnknownServiceException on every host.
+
+  Android's network security config has no CIDR support, so "private ranges only" can't be
+  expressed and cleartext is permitted app-wide. That is acceptable here because the app
+  never contacts anything off the local network: discovery sweeps the phone's own subnet,
+  and the remote-control channel itself runs over TLS on :8002.
+-->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

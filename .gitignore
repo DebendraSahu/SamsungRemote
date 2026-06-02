@@ -1,0 +1,32 @@
+# Build output
+/build
+/app/build
+/captures
+.externalNativeBuild
+.cxx
+*.apk
+*.aab
+
+# Gradle
+.gradle
+.kotlin
+local.properties
+
+# IDEs
+*.iml
+.idea/
+.vscode/
+
+# Signing material — never commit these
+*.jks
+*.keystore
+keystore.properties
+signing.properties
+
+# Personal notes: device addresses, ids, anything specific to one TV or network
+MY_TV_NOTES.md
+*.local.md
+
+# OS
+.DS_Store
+Thumbs.db
