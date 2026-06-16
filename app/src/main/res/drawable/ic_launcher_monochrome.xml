@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Samsung Remote - monochrome layer for Android 13+ themed icons.
+
+    The system keeps only the alpha channel and re-tints it, so this is a single flat
+    silhouette of the remote with its controls knocked out as real holes (evenOdd fill):
+    a power dot, the navigation ring with its centre, and a key bar.
+
+    Same geometry as the full-colour foreground, so the two read as one icon:
+        body x 36..72, y 23..85; power at (54,35.5); wheel at (54,60); keys at y 76.5..80.5.
+-->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <path
+        android:fillColor="#FFEDEDED"
+        android:fillType="evenOdd"
+        android:pathData="M49,23 H59 A13,13 0 0 1 72,36 V72 A13,13 0 0 1 59,85 H49 A13,13 0 0 1 36,72 V36 A13,13 0 0 1 49,23 Z M49.5,35.5 A4.5,4.5 0 1 0 58.5,35.5 A4.5,4.5 0 1 0 49.5,35.5 Z M40,60 A14,14 0 1 0 68,60 A14,14 0 1 0 40,60 Z M48,60 A6,6 0 1 0 60,60 A6,6 0 1 0 48,60 Z M44,76.5 H64 A2,2 0 0 1 64,80.5 H44 A2,2 0 0 1 44,76.5 Z" />
+
+</vector>
